@@ -43,7 +43,7 @@ public class MyJWTConfiguration extends WebSecurityConfigurerAdapter {
 
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
-        final UrlBasedCorsConfigurationSource  source = new UrlBasedCorsConfigurationSource();
+        final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration corsConfiguration = new CorsConfiguration().applyPermitDefaultValues();
         source.registerCorsConfiguration("/**", corsConfiguration);
 
