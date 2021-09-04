@@ -21,7 +21,7 @@ import java.util.Date;
 
 public class MyJWTAuthenticateFilter extends UsernamePasswordAuthenticationFilter {
 
-    public static final int MY_TOKEN_EXPIRATION = 600_000; // 10 minutos
+    public static final int MY_TOKEN_EXPIRATION = 1_800_000; // 30 minutos
     public static final String TOKEN_PASSWORD = "96184775-8d9b-4408-819c-c9a323bef041";
     private final AuthenticationManager authenticationManager;
 
